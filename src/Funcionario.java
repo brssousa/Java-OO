@@ -4,9 +4,11 @@ public class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
+	private static int quantidadeFuncionarios = 0;
+	
 	
 	public double getBonificacao() {
-		return this.salario * 0.05;
+		return 100;
 	}
 	
 	public String getNome() {
@@ -28,6 +30,9 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
+	public static int getQuantidadeFuncionarios() {
+		return quantidadeFuncionarios;
+	}
 	
 
 }

@@ -1,3 +1,4 @@
+import java.io.ObjectInputStream.GetField;
 
 public class TesteFuncionario {
 
@@ -10,9 +11,9 @@ public class TesteFuncionario {
 		bruno.setCpf("016505556-10");
 		bruno.setSalario(3500.00);
 		
-		System.out.println(bruno.getNome());
-		System.out.println(bruno.getBonificacao());
-		System.out.println();
+//		System.out.println(bruno.getNome());
+//		System.out.println(bruno.getBonificacao());
+//		System.out.println();
 		
 		
 		Gerente alessandro = new Gerente();
@@ -21,10 +22,15 @@ public class TesteFuncionario {
 		alessandro.setSalario(5000.00);
 		alessandro.setSenha(19191);
 		
-		System.out.println(alessandro.getNome());
-		System.out.println(alessandro.autentica(19191));
-		System.out.println(alessandro.getCargo());
-		System.out.println(alessandro.getBonificacao());
+//		System.out.println(alessandro.getNome());
+//		System.out.println(alessandro.autentica(19191));
+//		System.out.println(alessandro.getCargo());
+//		System.out.println(alessandro.getBonificacao());
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.Registra(bruno);
+		controle.Registra(alessandro);
+		System.out.println(controle.getSomaTotal());
 	
 
 	}

@@ -4,6 +4,7 @@ public class Gerente extends Funcionario{
 	private int senha;
 	private String cargo = "Gerente";
 	
+	
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {
 			return true;
@@ -13,7 +14,7 @@ public class Gerente extends Funcionario{
 	}
 	
 	public double getBonificacao() {
-		return super.getBonificacao() + super.getSalario();
+		return super.getBonificacao() + 200;
 	}
 	
 	public void setSenha(int senha) {
