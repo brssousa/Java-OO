@@ -5,7 +5,7 @@ public class TesteFuncionario {
 	public static void main(String[] args) {
 		
 
-		Funcionario bruno = new designer();
+		Funcionario bruno = new Designer();
 		
 		bruno.setNome("Bruno Lucio");
 		bruno.setCpf("016505556-10");
@@ -22,7 +22,7 @@ public class TesteFuncionario {
 		alessandro.setSalario(5000.00);
 		alessandro.setSenha(19191);
 		
-		designer fabio = new designer();
+		Designer fabio = new Designer();
 		fabio.setNome("fabio Castro");
 		fabio.setSalario(3000);
 
