@@ -4,7 +4,11 @@ public class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
-	private static int quantidadeFuncionarios = 0;
+	private static int quantidadeFuncionarios; //atributo da geral para guardas a quantidades de funcionarios
+	
+	public Funcionario() {
+		quantidadeFuncionarios++;
+	}
 	
 	
 	public double getBonificacao() {

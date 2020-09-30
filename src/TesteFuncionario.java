@@ -22,6 +22,11 @@ public class TesteFuncionario {
 		alessandro.setSalario(5000.00);
 		alessandro.setSenha(19191);
 		
+		designer fabio = new designer();
+		fabio.setNome("fabio Castro");
+		fabio.setSalario(3000);
+
+		
 //		System.out.println(alessandro.getNome());
 //		System.out.println(alessandro.autentica(19191));
 //		System.out.println(alessandro.getCargo());
@@ -30,7 +35,9 @@ public class TesteFuncionario {
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.Registra(bruno);
 		controle.Registra(alessandro);
+		controle.Registra(fabio);
 		System.out.println(controle.getSomaTotal());
+		System.out.println(Funcionario.getQuantidadeFuncionarios());
 	
 
 	}
