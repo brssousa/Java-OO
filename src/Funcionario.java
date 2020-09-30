@@ -11,9 +11,7 @@ public abstract class Funcionario {
 	}
 	
 	
-	public double getBonificacao() {
-		return 100;
-	}
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
