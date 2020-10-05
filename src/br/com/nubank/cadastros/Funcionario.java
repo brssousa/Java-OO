@@ -1,3 +1,4 @@
+package br.com.nubank.cadastros;
 
 public abstract class Funcionario {
 	

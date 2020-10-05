@@ -1,9 +1,12 @@
+package br.com.nubank.cadastros;
+import br.com.nubank.modelos.Autenticavel;
+import br.com.nubank.modelos.VerificaSenha;
 
-public class Administrador extends Funcionario implements Autenticavel{
-
+public class Gerente extends Funcionario implements Autenticavel{
+	
 	private VerificaSenha autenticador;
 	
-	 public Administrador() {
+	 public Gerente() {
 		this.autenticador = new VerificaSenha();
 	}
 
@@ -16,9 +19,11 @@ public class Administrador extends Funcionario implements Autenticavel{
 	public void setSenha(int senha) {
 		autenticador.setSenha(senha);
 	}
-
+		
+	
 	@Override
 	public double getBonificacao() {
-		return 150;
+		return 200;
 	}
+
 }

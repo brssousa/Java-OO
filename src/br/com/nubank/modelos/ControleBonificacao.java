@@ -1,3 +1,5 @@
+package br.com.nubank.modelos;
+import br.com.nubank.cadastros.Funcionario;
 
 public class ControleBonificacao {
 	

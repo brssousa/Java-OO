@@ -1,4 +1,10 @@
-
+package br.com.nubank.testes;
+import br.com.nubank.cadastros.Cliente;
+import br.com.nubank.cadastros.Funcionario;
+import br.com.nubank.cadastros.Gerente;
+import br.com.nubank.modelos.Administrador;
+import br.com.nubank.modelos.ControleBonificacao;
+import br.com.nubank.modelos.SistemaInterno;
 
 public class TesteFuncionario {
 

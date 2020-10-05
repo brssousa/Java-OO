@@ -1,3 +1,4 @@
+package br.com.nubank.modelos;
 
 public class VerificaSenha {
 	
